@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA21CDA4290EAB49003315F1 /* DrugListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDA3290EAB49003315F1 /* DrugListTableViewController.swift */; };
+		DA21CDA6290EAB80003315F1 /* DrugInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDA5290EAB80003315F1 /* DrugInfoViewController.swift */; };
+		DA21CDA9290EABFD003315F1 /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDA8290EABFD003315F1 /* Drug.swift */; };
 		DAFE617D290EA61200198D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE617C290EA61200198D5C /* AppDelegate.swift */; };
 		DAFE617F290EA61200198D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE617E290EA61200198D5C /* SceneDelegate.swift */; };
-		DAFE6181290EA61200198D5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE6180290EA61200198D5C /* ViewController.swift */; };
 		DAFE6184290EA61200198D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE6182290EA61200198D5C /* Main.storyboard */; };
 		DAFE6186290EA61500198D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE6185290EA61500198D5C /* Assets.xcassets */; };
 		DAFE6189290EA61500198D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE6187290EA61500198D5C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA21CDA3290EAB49003315F1 /* DrugListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugListTableViewController.swift; sourceTree = "<group>"; };
+		DA21CDA5290EAB80003315F1 /* DrugInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInfoViewController.swift; sourceTree = "<group>"; };
+		DA21CDA8290EABFD003315F1 /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
 		DAFE6179290EA61200198D5C /* PillBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFE617C290EA61200198D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFE617E290EA61200198D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAFE6180290EA61200198D5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DAFE6183290EA61200198D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAFE6185290EA61500198D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFE6188290EA61500198D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA21CDA7290EABD3003315F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA21CDA8290EABFD003315F1 /* Drug.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DAFE6170290EA61200198D5C = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +68,41 @@
 		DAFE617B290EA61200198D5C /* PillBoxApp */ = {
 			isa = PBXGroup;
 			children = (
-				DAFE617C290EA61200198D5C /* AppDelegate.swift */,
-				DAFE617E290EA61200198D5C /* SceneDelegate.swift */,
-				DAFE6180290EA61200198D5C /* ViewController.swift */,
-				DAFE6182290EA61200198D5C /* Main.storyboard */,
+				DA21CDA7290EABD3003315F1 /* Models */,
+				DAFE6193290EA71100198D5C /* App */,
+				DAFE6192290EA6FA00198D5C /* ViewControllers */,
+				DAFE6191290EA6EF00198D5C /* Storyboards */,
 				DAFE6185290EA61500198D5C /* Assets.xcassets */,
-				DAFE6187290EA61500198D5C /* LaunchScreen.storyboard */,
-				DAFE618A290EA61500198D5C /* Info.plist */,
 			);
 			path = PillBoxApp;
+			sourceTree = "<group>";
+		};
+		DAFE6191290EA6EF00198D5C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE6182290EA61200198D5C /* Main.storyboard */,
+				DAFE6187290EA61500198D5C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DAFE6192290EA6FA00198D5C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA21CDA3290EAB49003315F1 /* DrugListTableViewController.swift */,
+				DA21CDA5290EAB80003315F1 /* DrugInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DAFE6193290EA71100198D5C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE617C290EA61200198D5C /* AppDelegate.swift */,
+				DAFE617E290EA61200198D5C /* SceneDelegate.swift */,
+				DAFE618A290EA61500198D5C /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFE6181290EA61200198D5C /* ViewController.swift in Sources */,
+				DA21CDA6290EAB80003315F1 /* DrugInfoViewController.swift in Sources */,
 				DAFE617D290EA61200198D5C /* AppDelegate.swift in Sources */,
+				DA21CDA4290EAB49003315F1 /* DrugListTableViewController.swift in Sources */,
+				DA21CDA9290EABFD003315F1 /* Drug.swift in Sources */,
 				DAFE617F290EA61200198D5C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,12 +328,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PillBoxApp/Info.plist;
+				INFOPLIST_FILE = PillBoxApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +342,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Chekan.PillBoxApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,12 +359,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PillBoxApp/Info.plist;
+				INFOPLIST_FILE = PillBoxApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +373,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Nikita-Chekan.PillBoxApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
