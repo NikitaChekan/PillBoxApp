@@ -2,7 +2,7 @@
 //  DrugInfoViewController.swift
 //  PillBoxApp
 //
-//  Created by jopootrivatel on 30.10.2022.
+//  Created by Vasya Smetankin and Nikita Chekan on 30.10.2022.
 //
 
 import UIKit

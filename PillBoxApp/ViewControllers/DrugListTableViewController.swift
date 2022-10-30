@@ -2,7 +2,7 @@
 //  DrugListTableViewController.swift
 //  PillBoxApp
 //
-//  Created by jopootrivatel on 30.10.2022.
+//  Created by Vasya Smetankin and Nikita Chekan on 30.10.2022.
 //
 
 import UIKit
@@ -30,8 +30,6 @@ class DrugListTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = drug.drugName
         content.secondaryText = drug.dosage
-//        content.image = UIImage(named: drug.drugName)
-//        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         return cell
     }
