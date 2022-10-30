@@ -10,6 +10,7 @@
 		DA21CDA4290EAB49003315F1 /* DrugListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDA3290EAB49003315F1 /* DrugListTableViewController.swift */; };
 		DA21CDA6290EAB80003315F1 /* DrugInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDA5290EAB80003315F1 /* DrugInfoViewController.swift */; };
 		DA21CDA9290EABFD003315F1 /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDA8290EABFD003315F1 /* Drug.swift */; };
+		DA21CDAD290ECABE003315F1 /* CreatorsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21CDAC290ECABE003315F1 /* CreatorsInfoViewController.swift */; };
 		DAFE617D290EA61200198D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE617C290EA61200198D5C /* AppDelegate.swift */; };
 		DAFE617F290EA61200198D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE617E290EA61200198D5C /* SceneDelegate.swift */; };
 		DAFE6184290EA61200198D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFE6182290EA61200198D5C /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		DA21CDA3290EAB49003315F1 /* DrugListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugListTableViewController.swift; sourceTree = "<group>"; };
 		DA21CDA5290EAB80003315F1 /* DrugInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugInfoViewController.swift; sourceTree = "<group>"; };
 		DA21CDA8290EABFD003315F1 /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
+		DA21CDAC290ECABE003315F1 /* CreatorsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorsInfoViewController.swift; sourceTree = "<group>"; };
 		DAFE6179290EA61200198D5C /* PillBoxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillBoxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFE617C290EA61200198D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFE617E290EA61200198D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				DA21CDA3290EAB49003315F1 /* DrugListTableViewController.swift */,
 				DA21CDA5290EAB80003315F1 /* DrugInfoViewController.swift */,
+				DA21CDAC290ECABE003315F1 /* CreatorsInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA21CDAD290ECABE003315F1 /* CreatorsInfoViewController.swift in Sources */,
 				DA21CDA6290EAB80003315F1 /* DrugInfoViewController.swift in Sources */,
 				DAFE617D290EA61200198D5C /* AppDelegate.swift in Sources */,
 				DA21CDA4290EAB49003315F1 /* DrugListTableViewController.swift in Sources */,

@@ -12,7 +12,8 @@ class DrugListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 80
+        tableView.rowHeight = 50
+        navigationItem.leftBarButtonItem = editButtonItem
 
     }
 
@@ -28,9 +29,24 @@ class DrugListTableViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = drug.drugName
         content.secondaryText = drug.dosage
-        
+//        content.image = UIImage(named: drug.drugName)
+//        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         cell.contentConfiguration = content
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        .none
+    }
+    
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        false
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentDrug = drugList.remove(at: sourceIndexPath.row)
+        drugList.insert(currentDrug, at: destinationIndexPath.row)
     }
 
     // MARK: - Navigation
@@ -40,5 +56,9 @@ class DrugListTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         infoVC?.drug = drugList[indexPath.row]
     }
+
+//    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
+//        dismiss(animated: true)
+//    }
 
 }

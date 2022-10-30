@@ -51,11 +51,72 @@
                             <outlet property="delegate" destination="Kqm-TG-zyR" id="3Td-SD-oHW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Drug List" id="IEF-MZ-PWL"/>
+                    <navigationItem key="navigationItem" title="Drug List" id="IEF-MZ-PWL">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info" catalog="system" id="EzJ-Rd-rF3">
+                            <connections>
+                                <segue destination="dLv-da-Vxe" kind="presentation" id="iiI-WC-2UK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajy-F2-Gsj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="692" y="20"/>
+        </scene>
+        <!--Creators Info View Controller-->
+        <scene sceneID="FQm-cG-k5U">
+            <objects>
+                <viewController id="dLv-da-Vxe" customClass="CreatorsInfoViewController" customModule="PillBoxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tNc-44-eqd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xaB-cu-rFL">
+                                <rect key="frame" x="75" y="224.5" width="170" height="99.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project creators:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqh-M1-ogk">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vasily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APN-ld-2mz">
+                                        <rect key="frame" x="54.5" y="36.5" width="61" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nikita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkR-iw-y8N">
+                                        <rect key="frame" x="55" y="73" width="60" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTn-7N-EWv">
+                                <rect key="frame" x="129" y="433.5" width="62" height="34.5"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonDidTapped" destination="dLv-da-Vxe" eventType="touchUpInside" id="nBo-P6-KoJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RpD-97-5vu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xaB-cu-rFL" firstAttribute="centerY" secondItem="tNc-44-eqd" secondAttribute="centerY" id="ARn-pI-DBb"/>
+                            <constraint firstItem="xaB-cu-rFL" firstAttribute="centerX" secondItem="tNc-44-eqd" secondAttribute="centerX" id="jCL-ei-7Tm"/>
+                            <constraint firstItem="qTn-7N-EWv" firstAttribute="centerX" secondItem="tNc-44-eqd" secondAttribute="centerX" id="mJk-H2-ChX"/>
+                            <constraint firstItem="RpD-97-5vu" firstAttribute="bottom" secondItem="qTn-7N-EWv" secondAttribute="bottom" constant="80" id="q4x-tQ-piA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S0O-Cm-hS3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="780"/>
         </scene>
         <!--Drug Info-->
         <scene sceneID="gTu-8c-kMm">
@@ -119,8 +180,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info" catalog="system" width="93" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
