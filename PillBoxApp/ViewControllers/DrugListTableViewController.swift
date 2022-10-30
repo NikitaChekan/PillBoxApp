@@ -12,6 +12,7 @@ class DrugListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.rowHeight = 50
         navigationItem.leftBarButtonItem = editButtonItem
 
@@ -56,9 +57,5 @@ class DrugListTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         infoVC?.drug = drugList[indexPath.row]
     }
-
-//    override func unwind(for unwindSegue: UIStoryboardSegue, towards subsequentVC: UIViewController) {
-//        dismiss(animated: true)
-//    }
 
 }
