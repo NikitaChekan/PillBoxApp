@@ -58,4 +58,5 @@ class DrugListTableViewController: UITableViewController {
         infoVC?.drug = drugList[indexPath.row]
     }
 
+
 }
