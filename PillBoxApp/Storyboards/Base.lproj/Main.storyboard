@@ -64,10 +64,38 @@
                     <view key="view" contentMode="scaleToFill" id="8LA-fF-DqQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nwy-Dt-c9t">
+                                <rect key="frame" x="16" y="112.5" width="288" height="240.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v4L-dG-7WJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="906-5c-j9B"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMA-zb-7op">
+                                        <rect key="frame" x="0.0" y="220" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UnG-XK-HaQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nwy-Dt-c9t" firstAttribute="top" secondItem="UnG-XK-HaQ" secondAttribute="top" constant="20" id="9iB-OF-9fG"/>
+                            <constraint firstItem="nwy-Dt-c9t" firstAttribute="leading" secondItem="UnG-XK-HaQ" secondAttribute="leading" constant="16" id="CGP-3G-eQX"/>
+                            <constraint firstItem="UnG-XK-HaQ" firstAttribute="trailing" secondItem="nwy-Dt-c9t" secondAttribute="trailing" constant="16" id="pRI-p8-cr5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Drug Info" id="UpD-b2-LBr"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="xMA-zb-7op" id="Zay-de-0pA"/>
+                        <outlet property="photoImageView" destination="v4L-dG-7WJ" id="vZu-ms-OGL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acX-iL-r40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
